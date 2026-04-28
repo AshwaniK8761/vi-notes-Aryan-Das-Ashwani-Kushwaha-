@@ -44,8 +44,8 @@ const Analitics = (props) => {
         <div className='feature'>
             <div><b>Keystrokes:</b> {props.klength}</div>
             <div><b>Paste:</b> {props.plength}</div>
-            <div><button className='s-button' onClick={handlesave}>Save Note</button></div>
             <div><button className='r-button' onClick={handlereset}>Reset</button></div>
+            <div><button className='s-button' onClick={handlesave}>Save Note</button></div>
             <button className='l-button' onClick={() => {
                 localStorage.removeItem("token");
                 window.location.reload();
